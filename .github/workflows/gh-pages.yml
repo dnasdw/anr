@@ -20,7 +20,7 @@ jobs:
       - name: Get full commit message like peaceiris/actions-gh-pages@v3
         working-directory: ./.
         run: |
-            printf -v FULL_COMMIT_MESSAGE %s "$(git log -1 --pretty=format:%B) dnasdw/pages_draft@$(git log -1 --pretty=format:%H)"
+            printf -v FULL_COMMIT_MESSAGE %s "$(git log -1 --pretty=format:%B) dnasdw/anr@$(git log -1 --pretty=format:%H)"
             echo "$FULL_COMMIT_MESSAGE"
             echo "FULL_COMMIT_MESSAGE<<EOF" >> $GITHUB_ENV
             echo "$FULL_COMMIT_MESSAGE" >> $GITHUB_ENV
@@ -46,7 +46,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # personal_token: ${{ secrets.MY_GITHUB_TOKEN }}
-          # external_repository: dnasdw/draft
+          # external_repository: dnasdw/anr
           publish_branch: gh-pages
           publish_dir: ././public
           force_orphan: false
