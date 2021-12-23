@@ -1,0 +1,13 @@
+baseURL = "https://dnasdw.github.io/anr"
+defaultContentLanguage = "zh-cn"
+theme = "DoIt"
+
+title = "聚草稿"
+
+[languages]
+  [languages.zh-cn]
+    languageCode = "zh-CN"
+    hasCJKLanguage = true
+
+[params]
+  version = "0.2.X"
